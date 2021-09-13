@@ -16,7 +16,36 @@
     </div>
 
     <div id=main>
-        <h1>Welcome to Sorairo's Resort!</h1>
+            <div id="welcome">Welcome to Sorairo's Resort!</div>
     </div>
 </body>
+<style>
+    #main {
+        padding: 0;
+        margin: 0;
+        background-image: url("media//homepage-banner.jpg");
+        height: 86vh;
+        width: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        /* (1) Centers banner msg */
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* (1) */
+    #welcome {
+        text-align: center;
+        font-size: 4rem;
+        background-color: rgba(0, 200, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 5vh 0;
+        color: black;
+    }
+
+</style>
 </html>
