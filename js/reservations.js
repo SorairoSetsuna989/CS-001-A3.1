@@ -1,12 +1,14 @@
 var dates = {}
 today = new Date();
-var form = document.getElementById("form");
+
 var calendar = document.getElementById("date-select");
 var submit = document.getElementById("pseudo-submit");
-function pseudo_check() {
-    // Pseudo room availability based on seconds of current date.
 
-    const selected = new Date(calendar.value);
+function pseudo_check() {
+    // Pseudo room availability check based.
+
+    const input = calendar.value;
+    const selected = new Date(input);
 
     if (today.getTime() > selected.getTime()) {
 
@@ -14,21 +16,18 @@ function pseudo_check() {
 
     } else {
 
-        const input = calendar.value;
-
-        let is_available;
+        let available;
     
         if (input in dates) {
-            is_available = dates[input]
+            available = dates[input]
     
         } else {
             let d = new Date();
-            let c = d.getSeconds();
-            is_available = c < 15 || c >= 15 && c < 45;
-            dates[input] = is_available;
+            available = (d.getSeconds() % 10) < 5
+            dates[input] = available;
         }
         
-        if (is_available) {
+        if (available) {
             submit.removeAttribute("disabled");
             alert("There are rooms available!")
         } else {
