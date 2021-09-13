@@ -1,7 +1,17 @@
 /* For All Screens */
 @media screen {
+    body {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
     body * {
         font-size: 1.2rem;
+    }
+
+    #main {
+        margin: 2vh 2vw;
     }
 }
 
