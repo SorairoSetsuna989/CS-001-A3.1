@@ -3,6 +3,8 @@ table {
     padding: 1.5vh 1.5vw;
     margin: 8vh 5vw;
     height: max-content;
+    background-color: rgba(255,255,255,0.85);
+    border-radius: 13px;
 }
 
 th, td {

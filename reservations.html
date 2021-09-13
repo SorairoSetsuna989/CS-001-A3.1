@@ -16,12 +16,6 @@
     </div>
     
     <div id=main>
-        <h1>Reservation Steps:</h1>
-        <ol>
-            <li>Check room availability for your planned vacation day using the calendar below.</li>
-            <li>If available, kindly complete the form.</li>
-            <li>Lastly, submit the form</li>
-        </ol>
         <form>
             <label for="set" >Select date:</label>
             <input type=date id="date-select" name=set onchange="pseudo_check()">
@@ -31,21 +25,57 @@
             <input type="text" name="name" placeholder="San Juan, Jean Carlo M." required>
             <br><br>
 
-            <label for="contact">Contact Number:</label>
-            <input type="tel" name="contact" required>
-            <br><br>
-
-            <label for="email">Your e-mail address:</label>
+            <label for="email">E-mail address:</label>
             <input type="email" name="email" placeholder=qjcmsanjuan@tip.edu.ph required>
             <br><br>
 
+            <label for="contact">Contact Number:</label>
+            <input type="tel" name="contact" required>
+            <br><br>
             <label for="days">Number of days:</label>
             <input type="number" name="days" max=14 min=1 value=1 required>
             <br><br>
 
-            <button id="pseudo-submit" onclick="alert('We have received your reservation')" disabled>Submit reservation</button>
+            <label for="party">Party size:</label>
+            <input type="number" name="party" max=12 min=2 value=2 required>
+            <br><br>
+
+            <button id="pseudo-submit" onclick="alert('We have received your reservation')" disabled>Set reservation</button>
         </form>
+        <div>
+            <h1>Reservation Steps:</h1>
+            <ol>
+                <li>Check room availability by selecting your planned vacadation date.</li>
+                <li>If available, kindly complete the form.</li>
+                <li>Next, submit the form</li>
+                <li>Lastly, wait for the confirmation email by our representative.</li>
+            </ol>
+        </div>
     </div>
 </body>
+<style>
+    #main {
+        background-color: rgba(255,255,255,0.8);
+        padding: 2vh 2vw;
+        border-radius: 13px;
+        display: flex;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+    li {
+        padding-bottom: 2vh;
+        font-size: 1.4rem;
+    }
+    form {
+        margin-right: 15vw;
+    }
+    input {
+        border-radius: 5px;
+        padding: 1vh 1vw;
+        border-style: none;
+    }
+</style>
 <script src="js/reservations.js" defer></script>
 </html>

@@ -4,7 +4,7 @@
     #navbar {
         display: flex;
         flex-direction: row;
-        background-color: aqua;
+        /* background-color: aqua; */
         top:0;
         left: 0;
         width: 100%;
@@ -13,7 +13,7 @@
 
     #focus {
         border: aqua;
-        border-bottom: black;
+        border-bottom: white;
         border-bottom-style: solid;
         border-bottom-width: 3px;
     }
@@ -26,7 +26,7 @@
     }
 
     #navbar a, #brand {
-        color:black;
+        color:white;
         padding: 2vh 1vw;
         text-decoration: none;
         margin: 1vh 0.5vw;
@@ -61,8 +61,7 @@
 /* For all hovering capable screens */
 @media (hover: hover) {
     #navbar a:hover {
-        border: aqua;
-        border-bottom: blue;
+        border-bottom: yellow;
         border-bottom-style: solid;
         border-bottom-width: 3px;
     }

@@ -5,6 +5,13 @@
         flex-direction: column;
         margin: 0;
         overflow-x: hidden;
+
+        background-image: url("../media/homepage-banner.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        min-width: 100vw;
     }
 
     body * {
