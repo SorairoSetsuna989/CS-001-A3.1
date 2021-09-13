@@ -1,0 +1,19 @@
+table {
+    border: 1px solid grey;
+    padding: 1.5vh 1.5vw;
+    margin: 8vh 5vw;
+    height: max-content;
+}
+
+th, td {
+    padding: 1.5vh 1.5vw;
+    text-align: center;
+}
+
+table:hover {
+    cursor: default;
+}
+
+td:hover {
+    text-decoration: underline;
+}

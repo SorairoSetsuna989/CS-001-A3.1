@@ -4,6 +4,7 @@
     <title>Sorairo's Resort | About Us</title>
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/table.css">
 </head>
 <body>
     <div id="navbar">
@@ -16,7 +17,70 @@
     </div>
 
     <div id=main>
-        
+        <table>
+            <tr>
+                <th>Room Type</th>
+                <th>Party size</th>
+                <th>Per day</th>
+            </tr>
+            <tr>
+                <td>Standard Room</td>
+                <td>Two (2)</td>
+                <td>Php 2,100</td>
+            </tr>
+            <tr>
+                <td>Family Room A</td>
+                <td>Four (4)</td>
+                <td>Php 3,200</td>
+            </tr>
+            <tr>
+                <td>Family Room B</td>
+                <td>Seven (7)</td>
+                <td>Php 5,400</td>
+            </tr>
+        </table>
+        <br><br>
+        <table>
+            <tr>
+                <th>Optional Upgrades</th>
+                <th>Cost</th>
+            </tr>
+            <tr>
+                <td>Additional person</td>
+                <td>Php 400</td>
+            </tr>
+            <tr>
+                <td>All events access</td>
+                <td>Php 750</td>
+            </tr>
+            <tr>
+                <td>Movie of the night access</td>
+                <td>Php 100</td>
+            </tr>
+            <tr>
+                <td>Hot spring access</td>
+                <td>Php 200</td>
+            </tr>
+            <tr>
+                <td>Game club access</td>
+                <td>Php 150</td>
+            </tr>
+            <tr>
+                <td>Scuba diving access</td>
+                <td>Php 300</td>
+            </tr>
+            <tr>
+                <td>Sauna access</td>
+                <td>Php 300</td>
+            </tr>
+        </table>
     </div>
 </body>
+<style>
+    #main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+</style>
 </html>
