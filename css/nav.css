@@ -4,7 +4,6 @@
     #navbar {
         display: flex;
         flex-direction: row;
-        /* background-color: aqua; */
         top:0;
         left: 0;
         width: 100%;
@@ -12,7 +11,6 @@
     }
 
     #focus {
-        border: aqua;
         border-bottom: white;
         border-bottom-style: solid;
         border-bottom-width: 3px;
