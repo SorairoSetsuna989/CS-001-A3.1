@@ -6,10 +6,11 @@
         margin: 0;
         overflow-x: hidden;
 
-        background-image: url("../media/homepage-banner.jpg");
+        background-image: url("../media/Beach Side.jpg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         min-height: 100vh;
         min-width: 100vw;
     }
@@ -20,6 +21,14 @@
 
     #main {
         margin: 2vh 2vw;
+    }
+
+    .grid {
+        display: grid;
+    }
+    
+    img {
+        width: 100%;
     }
 }
 

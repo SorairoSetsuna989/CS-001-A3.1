@@ -17,14 +17,32 @@
     </div>
 
     <div id=main>
-        <table id="areas">
-            <tr>
-                <th>Area name</th>
-                <th>View</th>
-            </tr>
+        <div class="grid" id="views">
             <!-- More items Generated via JS -->
-        </table>
+        </div>
     </div>
 </body>
+<style>
+    img {
+        height: 50vh;
+    }
+    .grid {
+        grid-template-columns: 0.45fr 0.45fr;
+        gap: 10vh 3vw;
+        justify-content: center;
+    }
+
+    .area {
+        color: black;
+        background-color: rgba(255,255,255,0.9);
+        font-size: 2rem;
+        border-radius: 13px;
+        height: fit-content;
+        text-align: center;
+        background-position: top;
+        padding: 2vh 0;
+    }
+
+</style>
 <script src="js/amenities.js" defer></script>
 </html>

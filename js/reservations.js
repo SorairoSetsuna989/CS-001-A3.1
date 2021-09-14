@@ -5,7 +5,7 @@ var calendar = document.getElementById("date-select");
 var submit = document.getElementById("pseudo-submit");
 
 function pseudo_check() {
-    // Pseudo room availability check based.
+    // Pseudo room availability check.
 
     const input = calendar.value;
     const selected = new Date(input);
@@ -36,4 +36,15 @@ function pseudo_check() {
         }
 
     }
+}
+
+function pseudo_reserve() {
+    for (let i = 0; i < 3; i++) {
+        if (document.getElementById("r-" + i).value == "") {
+            alert("Please complete the form")
+            return
+        }
+    }
+
+    alert('We have received your reservation')
 }

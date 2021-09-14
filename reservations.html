@@ -22,15 +22,15 @@
             <br><br>
 
             <label for="name">Full Name:</label>
-            <input type="text" name="name" placeholder="San Juan, Jean Carlo M." required>
+            <input type="text" name="name" id="r-0" placeholder="San Juan, Jean Carlo M." required>
             <br><br>
 
             <label for="email">E-mail address:</label>
-            <input type="email" name="email" placeholder=qjcmsanjuan@tip.edu.ph required>
+            <input type="email" name="email" id=r-1 placeholder=qjcmsanjuan@tip.edu.ph required>
             <br><br>
 
             <label for="contact">Contact Number:</label>
-            <input type="tel" name="contact" required>
+            <input type="tel" name="contact" id=r-2 required>
             <br><br>
             <label for="days">Number of days:</label>
             <input type="number" name="days" max=14 min=1 value=1 required>
@@ -40,7 +40,7 @@
             <input type="number" name="party" max=12 min=2 value=2 required>
             <br><br>
 
-            <button id="pseudo-submit" onclick="alert('We have received your reservation')" disabled>Set reservation</button>
+            <button id="pseudo-submit" onclick="pseudo_reserve()" disabled>Set reservation</button>
         </form>
         <div>
             <h1>Reservation Steps:</h1>
