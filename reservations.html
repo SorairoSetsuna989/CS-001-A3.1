@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Sorairo's Resort | Reservations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id=page>Sorairo's Resort | Reservations</title>
     <link rel=stylesheet href=css/global.css>
     <link rel=stylesheet href=css/nav.css>
+    <link rel=stylesheet href=css/reservations.css>
 </head>
+<script>const index = 3;</script>
 <body>
     <div id="navbar">
-        <div id=brand>Sorairo's Resort</div>
-        <a href=index.html>Home</a>
-        <a href=amenities.html>Amenities</a>
-        <a href=roomrates.html>Room Rates</a>
-        <a href=reservations.html id=focus>Reservations</a>
-        <a href=about.html>About Us</a>    
+        <!-- More items Generated via JS -->
     </div>
     
     <div id=main>
@@ -53,29 +51,6 @@
         </div>
     </div>
 </body>
-<style>
-    #main {
-        background-color: rgba(255,255,255,0.8);
-        padding: 2vh 2vw;
-        border-radius: 13px;
-        display: flex;
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-    li {
-        padding-bottom: 2vh;
-        font-size: 1.4rem;
-    }
-    form {
-        margin-right: 15vw;
-    }
-    input {
-        border-radius: 5px;
-        padding: 1vh 1vw;
-        border-style: none;
-    }
-</style>
+<script src="js/nav.js" defer></script>
 <script src="js/reservations.js" defer></script>
 </html>

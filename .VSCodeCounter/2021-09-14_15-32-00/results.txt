@@ -1,0 +1,40 @@
+Date : 2021-09-14 15:32:00
+Directory : e:\School\BSCS-Y1-1S\CS-001-Introduction to computing\Resort
+Total : 12 files,  495 codes, 16 comments, 85 blanks, all 596 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| HTML       |          5 |        291 |          6 |         33 |        330 |
+| CSS        |          4 |        127 |          8 |         30 |        165 |
+| JavaScript |          3 |         77 |          2 |         22 |        101 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                              | files      | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                 |         12 |        495 |         16 |         85 |        596 |
+| css                                                                               |          4 |        127 |          8 |         30 |        165 |
+| js                                                                                |          3 |         77 |          2 |         22 |        101 |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                          | language   | code       | comment    | blank      | total      |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| e:\School\BSCS-Y1-1S\CS-001-Introduction to computing\Resort\about.html           | HTML       |         60 |          1 |         11 |         72 |
+| e:\School\BSCS-Y1-1S\CS-001-Introduction to computing\Resort\amenities.html       | HTML       |         41 |          2 |          6 |         49 |
+| e:\School\BSCS-Y1-1S\CS-001-Introduction to computing\Resort\css\global.css       | CSS        |         36 |          2 |         12 |         50 |
+| e:\School\BSCS-Y1-1S\CS-001-Introduction to computing\Resort\css\nav.css          | CSS        |         48 |          4 |          8 |         60 |
+| e:\School\BSCS-Y1-1S\CS-001-Introduction to computing\Resort\css\reservations.css | CSS        |         25 |          2 |          7 |         34 |
+| e:\School\BSCS-Y1-1S\CS-001-Introduction to computing\Resort\css\table.css        | CSS        |         18 |          0 |          3 |         21 |
+| e:\School\BSCS-Y1-1S\CS-001-Introduction to computing\Resort\index.html           | HTML       |         51 |          1 |          7 |         59 |
+| e:\School\BSCS-Y1-1S\CS-001-Introduction to computing\Resort\js\amenities.js      | JavaScript |         24 |          1 |          4 |         29 |
+| e:\School\BSCS-Y1-1S\CS-001-Introduction to computing\Resort\js\nav.js            | JavaScript |         17 |          0 |          5 |         22 |
+| e:\School\BSCS-Y1-1S\CS-001-Introduction to computing\Resort\js\reservations.js   | JavaScript |         36 |          1 |         13 |         50 |
+| e:\School\BSCS-Y1-1S\CS-001-Introduction to computing\Resort\reservations.html    | HTML       |         49 |          1 |          6 |         56 |
+| e:\School\BSCS-Y1-1S\CS-001-Introduction to computing\Resort\roomrates.html       | HTML       |         90 |          1 |          3 |         94 |
+| Total                                                                             |            |        495 |         16 |         85 |        596 |
++-----------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

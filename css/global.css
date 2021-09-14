@@ -1,71 +1,50 @@
-/* For All Screens */
-@media screen {
-    body {
-        display: flex;
-        flex-direction: column;
-        margin: 0;
-        overflow-x: hidden;
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    overflow-x: hidden;
 
-        background-image: url("../media/Beach Side.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        min-height: 100vh;
-        min-width: 100vw;
-    }
-
-    body * {
-        font-size: 1.2rem;
-    }
-
-    #main {
-        margin: 2vh 2vw;
-    }
-
-    .grid {
-        display: grid;
-    }
-    
-    img {
-        width: 100%;
-    }
-
-    .area {
-        color: black;
-        background-color: rgba(255,255,255,0.9);
-        font-size: 2rem;
-        border-radius: 13px;
-        text-align: center;
-        padding: 2vh 0;
-    }
+    background-image: url("../media/Beach Side.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
-/*  For all mobile screens */
+.grid { display: grid; }
+
+.flex { 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+img { width: 100%; }
+
+.area {
+    color: black;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 13px;
+    text-align: center;
+    padding: 2vh 0;
+    font-size: 1.4rem;
+
+}
+
+/*  For mobile */
 @media screen and (max-width: 820px) {
-
+    body * { font-size: 1.1rem; }
 }
 
-/*  For all mobile screens in portrait mode */
-@media screen and (max-width: 820px) and (orientation: portrait) {
+/* For PC */
+@media screen and (min-width: 820px){
 
-}
+    
+    body * { font-size: 1.2rem; }
 
-/*  For all mobile screens in landscape mode*/
-@media screen and (max-width: 820px) and (orientation: landscape){
+    #main { margin: 2vh 2vw; }
 
-}
-
-/* For all desktop */
-@media screen and (min-width: 820px) {
-
-}
-/* For Desktop and landscape oriented mobile screens */
-@media screen and (min-width: 820px), (max-width: 820px) and (orientation: landscape ) {
-
-}
-
-/* For all hovering capable screens */
-@media (hover: hover) {
-
+    .area { font-size: 2rem; }
 }
