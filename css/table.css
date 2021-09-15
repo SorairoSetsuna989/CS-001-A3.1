@@ -12,9 +12,7 @@ th, td {
     text-align: center;
 }
 
-table:hover {
-    cursor: default;
-}
+table:hover { cursor: default; }
 
 td:hover {
     text-decoration: underline;

@@ -9,10 +9,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
-    min-width: 100vw;
 }
 
+img { width: 100%; }
 .grid { display: grid; }
 
 .flex { 
@@ -21,8 +20,6 @@ body {
     align-items: center;
 }
 
-img { width: 100%; }
-
 .area {
     color: black;
     background-color: rgba(255,255,255,0.9);
@@ -30,7 +27,6 @@ img { width: 100%; }
     text-align: center;
     padding: 2vh 0;
     font-size: 1.4rem;
-
 }
 
 /*  For mobile */
@@ -40,8 +36,6 @@ img { width: 100%; }
 
 /* For PC */
 @media screen and (min-width: 820px){
-
-    
     body * { font-size: 1.2rem; }
 
     #main { margin: 2vh 2vw; }
