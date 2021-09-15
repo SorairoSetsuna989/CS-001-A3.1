@@ -10,7 +10,6 @@ const areas = [
 ]
 
 const table = document.getElementById("areas");
-
 const views = document.getElementById("views");
 
 // Filename must match the area name
@@ -23,7 +22,5 @@ for (let i = 0; i < areas.length; i+=2) {
     <div class="area">
         ${areas[i+1]}
         <img src="../media/${areas[i+1]}.jpg">
-    </div>
-
-    `
+    </div>`
 }
