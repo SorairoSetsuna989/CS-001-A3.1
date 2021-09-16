@@ -12,54 +12,53 @@
         <!-- More items Generated via JS -->
     </div>
     <div id=main>
-        <div class=white>Welcome to Sorairo's Resort!</div>
-        <div id=welcome class=white>-A place to bond, explore, and refresh. -</div>
+        <div class=msg>Welcome to Sorairo's Resort!</div>
+        <div id=welcome class=msg>-A place to bond, explore, and refresh. -</div>
 
         <div class="mobile">
             Welcome to Sorairo's Resort!
             <br><br>-A place to bond, explore, and refresh. -
         </div>
-        <div class=grid>
-            <div>
-                Visit our newest facility: Sauna
-                <br><br>Refresh your mind and body with hot-air 
-                and a steam-bath in one of our sauna rooms.
-                <br><br>
-                <img src="media/Sauna.jpg" alt="Sauna">
-            </div>
-            <div>
-                Health & Safety:
-                <br><br>Amidst the pandemic we thoroughly review the health of our guests before allowing them to stay. 
-                <br><br>Our staff are tested each week.
-                <br><br> We regularly disinfect our facilities in rotation.
-                <br><br>
-                <img src="media/covid-response.jpg" alt="Covid Response">
-            </div>
-            <div>
-                Reviews:
-                <br><br>Lorem ipsum dolor sit amet consectetur, adipisicing. 
-                <br>Illum, nesciunt nulla. Tenetur doloribus pariatur?
-                <br><br>Lelouch Vi Britannia, 
-                <br> Emperor of the Holy Britannian Empire
-            </div>
-            <div>
-                Movie and TV Show appearances:
-                <ul>
-                    <li>Lorem ipsum dolor sit amet.</li>
-                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius.</li>
-                    <li>Lorem ipsum dolor sit.</li>
-                </ul>
-            </div>
+        <div>
+            Visit our newest facility: Sauna
+            <br><br>Refresh your mind and relax your body with our hot-air 
+            and a steam-bath. Choose from one of our many sauna rooms.
+            <br><br>
+            <img src="media/Sauna.jpg" alt="Sauna">
         </div>
-        <div class=white>
-            Planning for a vacation?
+        <div>
+            <ul>
+            Health & Safety:
+                <li>we thoroughly review the health of our guests before admission. </li>
+                <li>Our staff are tested each week.</li>
+                <li>We regularly disinfect our facilities in rotation.</li>
+            </ul>
+            <img src="media/covid-response.jpg" alt="Covid Response">
+        </div>
+        <div>
+            Highlight Review:
+            <br><br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores eos esse reiciendis placeat repellendus eum laudantium sint inventore doloremque id quibusdam soluta, hic suscipit maxime praesentium pariatur, illum eveniet ipsam provident. Eveniet temporibus molestias obcaecati mollitia velit recusandae doloremque cupiditate sed dolore ea, non iste laudantium, veniam dolorem? Dolorem earum vel qui ducimus aut sapiente laboriosam dicta doloribus quo ipsum!
+            <br><br> - John Doe 
+        </div>
+        <div>
+            <ul>
+            Movie and Series appearances:
+                <li>The Knight's Gambit</li>
+                <li>Ocean's 18   </li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius.</li>
+                <li>Lorem ipsum dolor sit.</li>
+            </ul>
+        </div>
+        <div class=msg>
+            Planning for vacation?
             <br><br>Sorairo's Resort is the place to be!
         </div>
     </div>
 
 </body>
 <style>
+    li { margin: 3vh 4vw;}
+
     #main {
         padding: 0;
         width: 100%;
@@ -71,59 +70,74 @@
         justify-content: center;
     }
 
-    img { width: 75%; }
+    .msg { text-align: center;}
 
-    #main > div, .grid div {
-        text-align: center; 
+    #main > div {
         padding: 8vh 0;
         color: black;
+        background-color: rgba(255, 255, 255, 0.7);
     }
 
-    .grid div { border-radius: 8px; }
+    #main > div:not(.msg) { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px; 
+    }
+
+    img { 
+        width: 50%; 
+        object-fit: contain;
+        border-radius: 8px;
+        margin-left: 2vw;
+    }
 
     /*  mobile */
     @media screen and (max-width: 820px) {
-        #main > div { font-size: 1.4rem; }
-        #welcome { font-size: 1.6rem; }
-
-        .grid div, .white, .mobile {
-            margin: 8vh 0;
-            background-color: rgba(255, 255, 255, 0.9);
+        #main > div { 
+            font-size: 1.4rem; 
+            margin: 7vh 4vw;
+            padding: 4vh 7vw;
         }
-        
+
+        ul, li { font-size: 1.4rem; }
+
+        img {  width: 75%; }
+        #main > :last-child { margin-bottom: 25vh; }
+
         #main > :first-child, #main > :nth-child(2) { 
             display: none;
         }        
-        
-        li { font-size: 1.3rem; }
-        #main > div { padding: 4vh 4vw; }
-        #main > :last-child { margin-bottom: 25vh; }
-        .mobile { margin: 32vh 0; }
+
+        .mobile { 
+            text-align: center;
+            font-size: 1.6rem !important;
+        }
     }
 
     /* PC */
     @media screen and (min-width: 820px){
-        .mobile { display: none; }
-        #welcome { font-size: 4rem; }
-        #main > div  { font-size: 3.3rem; }
+        .mobile { display: none !important; }
 
-        #main > div, .grid div {
-            margin: 25vh 0;
-            background-color: rgba(255, 255, 255, 0.7);
+        #main > div { font-size: 1.3rem }
+
+        .msg { 
+            font-size: 3.3rem !important; 
+            margin: 26vh 0;
         }
 
-        .grid div { 
-            padding: 4vh 2vw;
+        ul, li { font-size: 1.6rem; }
+
+        #main > div:not(.msg) {
             text-align: left;
+            flex-direction: row;
+
+            padding: 5vh 4vw;
+            margin: 7vh 8vw;
+            font-size: 1.6rem;
         }
 
-        .grid div, li { font-size: 1.8rem; }
-
-        .grid {
-            grid-template-columns: 0.5fr 0.5fr;
-            gap: 2vh 4vw;
-            background:none !important;
-        }
+        #welcome { font-size: 4rem; }
     }
 </style>
 <script src="js/nav.js" defer></script>
